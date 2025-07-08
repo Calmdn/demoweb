@@ -38,7 +38,7 @@
             <div class="artworks-grid">
               <div class="artwork-card" v-for="i in 6" :key="i">
                 <div class="artwork-image">
-                  <img src="/api/placeholder/300/200" alt="作品" />
+                  <img src="https://picsum.photos/300/200" alt="作品" />
                 </div>
                 <div class="artwork-info">
                   <h3>我的作品 {{ i }}</h3>
@@ -52,7 +52,7 @@
             <div class="artworks-grid">
               <div class="artwork-card" v-for="i in 4" :key="i">
                 <div class="artwork-image">
-                  <img src="/api/placeholder/300/200" alt="收藏作品" />
+                  <img src="https://picsum.photos/300/200" alt="收藏作品" />
                 </div>
                 <div class="artwork-info">
                   <h3>收藏作品 {{ i }}</h3>

@@ -30,7 +30,7 @@
         <div class="artworks-grid">
           <div class="artwork-card" v-for="i in 6" :key="i">
             <div class="artwork-image">
-              <img src="/api/placeholder/300/200" alt="精选作品" />
+              <img src="https://picsum.photos/300/200" alt="精选作品" />
             </div>
             <div class="artwork-info">
               <h3>精选作品 {{ i }}</h3>
@@ -61,7 +61,7 @@ const categories = ref([
     id: 1,
     name: '数字艺术',
     description: '现代数字技术创作的艺术作品',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 245,
     artists: 58
   },
@@ -69,7 +69,7 @@ const categories = ref([
     id: 2,
     name: '传统绘画',
     description: '使用传统绘画技法创作的作品',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 189,
     artists: 42
   },
@@ -77,7 +77,7 @@ const categories = ref([
     id: 3,
     name: '摄影',
     description: '用光影记录美好瞬间',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 356,
     artists: 89
   },
@@ -85,7 +85,7 @@ const categories = ref([
     id: 4,
     name: '设计',
     description: '创意设计与视觉传达',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 198,
     artists: 67
   },
@@ -93,7 +93,7 @@ const categories = ref([
     id: 5,
     name: '雕塑',
     description: '立体艺术的魅力展现',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 78,
     artists: 23
   },
@@ -101,7 +101,7 @@ const categories = ref([
     id: 6,
     name: '手工艺',
     description: '传统工艺与现代创新',
-    image: '/api/placeholder/400/300',
+    image: 'https://picsum.photos/400/300',
     count: 134,
     artists: 45
   }

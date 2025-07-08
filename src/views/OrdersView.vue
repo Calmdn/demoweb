@@ -34,7 +34,7 @@
               <div class="order-items">
                 <div class="order-item">
                   <div class="item-image">
-                    <img src="/api/placeholder/80/80" alt="商品图片" />
+                    <img src="https://picsum.photos/80/80" alt="商品图片" />
                   </div>
                   <div class="item-info">
                     <h4>作品授权使用权 {{ i }}</h4>

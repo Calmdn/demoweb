@@ -1,59 +1,134 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AppLayout from '@/components/layout/AppLayout.vue'
 import { useUserStore } from '@/stores/user'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // 需要布局的路由
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
-      meta: {
-        requiresAuth: false,
-        title: '首页'
-      }
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-      meta: {
-        requiresAuth: false,
-        title: '关于我们'
-      }
+      component: AppLayout,
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: HomeView,
+          meta: {
+            requiresAuth: false,
+            title: '首页'
+          }
+        },
+        {
+          path: 'about',
+          name: 'about',
+          component: () => import('../views/AboutView.vue'),
+          meta: {
+            requiresAuth: false,
+            title: '关于我们'
+          }
+        },
+        
+        // 作品相关路由
+        {
+          path: 'artworks',
+          name: 'artworks',
+          component: () => import('../views/ArtworksView.vue'),
+          meta: {
+            requiresAuth: false,
+            title: '作品列表'
+          }
+        },
+        {
+          path: 'artworks/:id',
+          name: 'artwork-detail',
+          component: () => import('../views/ArtworkDetailView.vue'),
+          meta: {
+            requiresAuth: false,
+            title: '作品详情'
+          }
+        },
+        {
+          path: 'publish',
+          name: 'publish',
+          component: () => import('../views/PublishView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '发布作品'
+          }
+        },
+        
+        // 用户相关路由（需要布局）
+        {
+          path: 'profile',
+          name: 'profile',
+          component: () => import('../views/ProfileView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '个人资料'
+          }
+        },
+        {
+          path: 'dashboard',
+          name: 'dashboard',
+          component: () => import('../views/DashboardView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '个人中心'
+          }
+        },
+        {
+          path: 'orders',
+          name: 'orders',
+          component: () => import('../views/OrdersView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '我的订单'
+          }
+        },
+        {
+          path: 'favorites',
+          name: 'favorites',
+          component: () => import('../views/FavoritesView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '我的收藏'
+          }
+        },
+        {
+          path: 'settings',
+          name: 'settings',
+          component: () => import('../views/SettingsView.vue'),
+          meta: {
+            requiresAuth: true,
+            title: '设置'
+          }
+        },
+        
+        // 其他页面路由
+        {
+          path: 'categories',
+          name: 'categories',
+          component: () => import('../views/CategoriesView.vue'),
+          meta: {
+            requiresAuth: false,
+            title: '分类'
+          }
+        },
+        {
+          path: 'creators',
+          name: 'creators',
+          component: () => import('../views/CreatorsView.vue'),
+          meta: {
+            requiresAuth: false,
+            title: '创作者'
+          }
+        },
+      ]
     },
     
-    // 作品相关路由
-    {
-      path: '/artworks',
-      name: 'artworks',
-      component: () => import('../views/ArtworksView.vue'),
-      meta: {
-        requiresAuth: false,
-        title: '作品列表'
-      }
-    },
-    {
-      path: '/artworks/:id',
-      name: 'artwork-detail',
-      component: () => import('../views/ArtworkDetailView.vue'),
-      meta: {
-        requiresAuth: false,
-        title: '作品详情'
-      }
-    },
-    {
-      path: '/publish',
-      name: 'publish',
-      component: () => import('../views/PublishView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '发布作品'
-      }
-    },
-    
-    // 用户相关路由
+    // 不需要布局的路由（独立页面）
     {
       path: '/login',
       name: 'login',
@@ -72,71 +147,6 @@ const router = createRouter({
         requiresAuth: false,
         title: '注册',
         hideForAuth: true // 已登录用户隐藏
-      }
-    },
-    {
-      path: '/profile',
-      name: 'profile',
-      component: () => import('../views/ProfileView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '个人资料'
-      }
-    },
-    {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: () => import('../views/DashboardView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '个人中心'
-      }
-    },
-    {
-      path: '/orders',
-      name: 'orders',
-      component: () => import('../views/OrdersView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '我的订单'
-      }
-    },
-    {
-      path: '/favorites',
-      name: 'favorites',
-      component: () => import('../views/FavoritesView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '我的收藏'
-      }
-    },
-    {
-      path: '/settings',
-      name: 'settings',
-      component: () => import('../views/SettingsView.vue'),
-      meta: {
-        requiresAuth: true,
-        title: '设置'
-      }
-    },
-    
-    // 其他页面路由
-    {
-      path: '/categories',
-      name: 'categories',
-      component: () => import('../views/CategoriesView.vue'),
-      meta: {
-        requiresAuth: false,
-        title: '分类'
-      }
-    },
-    {
-      path: '/creators',
-      name: 'creators',
-      component: () => import('../views/CreatorsView.vue'),
-      meta: {
-        requiresAuth: false,
-        title: '创作者'
       }
     },
   ],

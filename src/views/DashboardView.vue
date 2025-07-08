@@ -99,7 +99,7 @@
           <div class="recent-artworks">
             <div class="artwork-item" v-for="i in 3" :key="i">
               <div class="artwork-thumbnail">
-                <img src="/api/placeholder/80/80" alt="作品缩略图" />
+                <img src="https://picsum.photos/80/80" alt="作品缩略图" />
               </div>
               <div class="artwork-info">
                 <h4>作品标题{{ i }}</h4>

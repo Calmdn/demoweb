@@ -101,56 +101,56 @@ const favoriteItems = ref([
     id: 1,
     title: '梦幻森林',
     author: '张艺术',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-01'
   },
   {
     id: 2,
     title: '城市夜景',
     author: '李创作',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-02'
   },
   {
     id: 3,
     title: '抽象艺术',
     author: '王设计',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-03'
   },
   {
     id: 4,
     title: '自然风光',
     author: '赵摄影',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-04'
   },
   {
     id: 5,
     title: '人物肖像',
     author: '孙画家',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-05'
   },
   {
     id: 6,
     title: '建筑美学',
     author: '周建筑',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-06'
   },
   {
     id: 7,
     title: '数字艺术',
     author: '吴数字',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-07'
   },
   {
     id: 8,
     title: '传统工艺',
     author: '郑传统',
-    image: '/api/placeholder/300/200',
+    image: 'https://picsum.photos/300/200',
     collectTime: '2024-01-08'
   }
 ])

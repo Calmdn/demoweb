@@ -20,7 +20,7 @@
         <div class="artworks-grid">
           <div class="artwork-card" v-for="i in 8" :key="i">
             <div class="artwork-image">
-              <img src="/api/placeholder/300/200" alt="作品图片" />
+              <img src="https://picsum.photos/300/200" alt="作品图片" />
             </div>
             <div class="artwork-info">
               <h3>作品标题 {{ i }}</h3>

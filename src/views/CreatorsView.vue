@@ -112,14 +112,14 @@ const creators = ref([
     username: '张艺术家',
     title: '数字艺术家',
     bio: '专注于数字艺术创作，擅长概念设计和角色设计',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 1234,
     artworks: 45,
     isFollowed: false,
     recentArtworks: [
-      { id: 1, title: '作品1', image: '/api/placeholder/80/80' },
-      { id: 2, title: '作品2', image: '/api/placeholder/80/80' },
-      { id: 3, title: '作品3', image: '/api/placeholder/80/80' }
+      { id: 1, title: '作品1', image: 'https://picsum.photos/80/80' },
+      { id: 2, title: '作品2', image: 'https://picsum.photos/80/80' },
+      { id: 3, title: '作品3', image: 'https://picsum.photos/80/80' }
     ]
   },
   {
@@ -127,14 +127,14 @@ const creators = ref([
     username: '李摄影师',
     title: '风光摄影师',
     bio: '用镜头捕捉世界的美好，专注于自然风光摄影',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 567,
     artworks: 89,
     isFollowed: true,
     recentArtworks: [
-      { id: 4, title: '作品4', image: '/api/placeholder/80/80' },
-      { id: 5, title: '作品5', image: '/api/placeholder/80/80' },
-      { id: 6, title: '作品6', image: '/api/placeholder/80/80' }
+      { id: 4, title: '作品4', image: 'https://picsum.photos/80/80' },
+      { id: 5, title: '作品5', image: 'https://picsum.photos/80/80' },
+      { id: 6, title: '作品6', image: 'https://picsum.photos/80/80' }
     ]
   },
   {
@@ -142,14 +142,14 @@ const creators = ref([
     username: '王设计师',
     title: 'UI/UX设计师',
     bio: '专注于用户体验设计，创造美观实用的界面',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 890,
     artworks: 67,
     isFollowed: false,
     recentArtworks: [
-      { id: 7, title: '作品7', image: '/api/placeholder/80/80' },
-      { id: 8, title: '作品8', image: '/api/placeholder/80/80' },
-      { id: 9, title: '作品9', image: '/api/placeholder/80/80' }
+      { id: 7, title: '作品7', image: 'https://picsum.photos/80/80' },
+      { id: 8, title: '作品8', image: 'https://picsum.photos/80/80' },
+      { id: 9, title: '作品9', image: 'https://picsum.photos/80/80' }
     ]
   },
   {
@@ -157,14 +157,14 @@ const creators = ref([
     username: '赵画家',
     title: '传统绘画艺术家',
     bio: '传承传统绘画技法，融合现代艺术理念',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 345,
     artworks: 23,
     isFollowed: false,
     recentArtworks: [
-      { id: 10, title: '作品10', image: '/api/placeholder/80/80' },
-      { id: 11, title: '作品11', image: '/api/placeholder/80/80' },
-      { id: 12, title: '作品12', image: '/api/placeholder/80/80' }
+      { id: 10, title: '作品10', image: 'https://picsum.photos/80/80' },
+      { id: 11, title: '作品11', image: 'https://picsum.photos/80/80' },
+      { id: 12, title: '作品12', image: 'https://picsum.photos/80/80' }
     ]
   },
   {
@@ -172,14 +172,14 @@ const creators = ref([
     username: '孙雕塑师',
     title: '雕塑艺术家',
     bio: '专注于现代雕塑创作，探索形式与空间的关系',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 678,
     artworks: 34,
     isFollowed: true,
     recentArtworks: [
-      { id: 13, title: '作品13', image: '/api/placeholder/80/80' },
-      { id: 14, title: '作品14', image: '/api/placeholder/80/80' },
-      { id: 15, title: '作品15', image: '/api/placeholder/80/80' }
+      { id: 13, title: '作品13', image: 'https://picsum.photos/80/80' },
+      { id: 14, title: '作品14', image: 'https://picsum.photos/80/80' },
+      { id: 15, title: '作品15', image: 'https://picsum.photos/80/80' }
     ]
   },
   {
@@ -187,14 +187,14 @@ const creators = ref([
     username: '周手工匠',
     title: '手工艺术家',
     bio: '传统手工艺与现代设计的完美结合',
-    avatar: '/api/placeholder/60/60',
+    avatar: 'https://picsum.photos/60/60',
     followers: 456,
     artworks: 56,
     isFollowed: false,
     recentArtworks: [
-      { id: 16, title: '作品16', image: '/api/placeholder/80/80' },
-      { id: 17, title: '作品17', image: '/api/placeholder/80/80' },
-      { id: 18, title: '作品18', image: '/api/placeholder/80/80' }
+      { id: 16, title: '作品16', image: 'https://picsum.photos/80/80' },
+      { id: 17, title: '作品17', image: 'https://picsum.photos/80/80' },
+      { id: 18, title: '作品18', image: 'https://picsum.photos/80/80' }
     ]
   }
 ])
